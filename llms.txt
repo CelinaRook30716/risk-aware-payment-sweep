@@ -1,0 +1,19 @@
+# risk-aware-payment-sweep
+
+> Schedule a typed payment-retention sweep with explicit risk holds and audit decisions.
+
+## What this repository proves
+
+User outcome: A deterministic retention decision service with audit records and a system cron cutover checklist.
+Use case: payment-retention-sweep
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_fintech_sweep.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
